@@ -16,7 +16,6 @@
         <script src="js/respond.js"></script>
     <![endif]-->
 </head>
-<script type="text/javascript" src="http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js"></script>
 <body class="no-js">
     <div class="main">
         <header>
@@ -65,7 +64,7 @@
 希望把现有项目发布在我们平台的组织或个人也可以和我们取得联系！<br/>
 Volunteer+Vacation,让身体和心灵同时在路上！</p>
                 </div>
-                <!-- /.wrap -->
+                 /.wrap -->
             <!--</div>-->
             <!-- /.promo clearfix -->
             <a name="favorite"></a>
