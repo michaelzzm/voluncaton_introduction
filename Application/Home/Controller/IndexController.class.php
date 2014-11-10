@@ -19,9 +19,13 @@ class IndexController extends Controller {
         if(filter_var($addr, FILTER_VALIDATE_IP))
             $ip = $addr;
 
-        $res = @file_get_contents('http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js&ip='.$ip); 
+        if($ip=='127.0.0.1')
+            $res = @file_get_contents('http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js');
+        else
+            $res = @file_get_contents('http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js&ip='.$ip); 
         if(empty($res)){ return false; }  
         $jsonMatches = array();  
+
         preg_match('#\{.+?\}#', $res, $jsonMatches);  
         if(!isset($jsonMatches[0])){ return false; }  
         $json = json_decode($jsonMatches[0], true);  
@@ -35,7 +39,7 @@ class IndexController extends Controller {
         $country = $json[country];
         //var_dump($json);
         //$this->assign('country', $country);
-        if($country == "中国")
+        if($country == "中国" || $country == "新加坡")
             $this->display('Chinese');
         else
             $this->display('English');
