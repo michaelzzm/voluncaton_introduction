@@ -39,7 +39,7 @@ class IndexController extends Controller {
         $country = $json[country];
         //var_dump($json);
         //$this->assign('country', $country);
-        if($country == "中国" || $country == "新加坡")
+        if($country == "中国" || $country == "新加坡" || $country == "")
             $this->display('Chinese');
         else
             $this->display('English');
