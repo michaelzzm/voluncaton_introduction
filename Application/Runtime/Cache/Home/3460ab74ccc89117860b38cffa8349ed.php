@@ -16,7 +16,6 @@
         <script src="js/respond.js"></script>
     <![endif]-->
 </head>
-<script type="text/javascript" src="http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js"></script>
 <body class="no-js">
     <div class="main">
         <header>
@@ -37,7 +36,7 @@
         <div class="spanning">
             <div class="video clearfix">
                 <div class="wrap">
-                    <div class="video-title">敬请期待 - <?php echo ($country); ?></div>
+                    <div class="video-title">敬请期待</div>
                     <div class="video-subtitle">目前我们的网站正在建设中，希望在2015新年伊始之际与您见面！<br/>
                     关注公益旅行的小伙伴可以立即<a href="#subscribe">订阅</a>我们的最新消息！<br/>
                     希望把现有项目发布在我们平台的组织或个人也可以和我们<a href="#favorite">取得联系</a>！<br/>
@@ -65,7 +64,7 @@
 希望把现有项目发布在我们平台的组织或个人也可以和我们取得联系！<br/>
 Volunteer+Vacation,让身体和心灵同时在路上！</p>
                 </div>
-                <!-- /.wrap -->
+                 /.wrap -->
             <!--</div>-->
             <!-- /.promo clearfix -->
             <a name="favorite"></a>
