@@ -108,7 +108,7 @@ Volunteer+Vacation,让身体和心灵同时在路上！</p>
     <footer>
         <div class="wrap">
             <p>&copy; 2014 <strong>旅心 Voluncation.com</strong>, All Rights Reserved</p>
-            <a href="http://www.voluncation.com/zh">中文版</a>
+            <a href="{:U('Index/zh')}">中文版</a>
         </div>
         <!-- /.wrap -->
     </footer>
