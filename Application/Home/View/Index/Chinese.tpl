@@ -109,10 +109,11 @@ Volunteer+Vacation,让身体和心灵同时在路上！</p>
     <footer>
         <div class="wrap">
             <p>&copy; 2014 <strong>旅心 Voluncation.com</strong>, All Rights Reserved</p>
-            <a href="{:U('Index/en')}">English Version</a>
+            <a href="http://www.voluncation.com/en">English Version</a>
         </div>
         <!-- /.wrap -->
     </footer>
+    <img style="display:none" src="/getqrcode.jpg">
     <load href="__PUBLIC__/js/jquery.js" />
     <load href="__PUBLIC__/js/bootstrap.js" />
     <load href="__PUBLIC__/js/library.js" />
