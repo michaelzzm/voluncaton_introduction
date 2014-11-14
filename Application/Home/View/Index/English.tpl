@@ -46,8 +46,8 @@
                     <div class="video-share-wrapper clearfix">
                         <ul class="social-list clearfix">
                             <li class="video-share-title">Share:</li>
-                            <li><a href="#" class="social-twitter"><strong>Twitter</strong></a></li>
-                            <li><a href="#" class="social-facebook"><strong>Facebook</strong></a></li>
+                            <li><a href="http://twitter.com/home?status=Voluncation - Volunteer %2B Vacation, Experience your very vacation! http://www.voluncation.com" class="social-twitter"><strong>Twitter</strong></a></li>
+                            <li><a href="http://www.facebook.com/sharer.php?u=http://www.voluncation.com&t=Volunteer+Vacation, Experience your very vacation!" class="social-facebook"><strong>Facebook</strong></a></li>
                         </ul>
                     </div>
                 </div>
@@ -96,7 +96,7 @@ Volunteer+Vacation,让身体和心灵同时在路上！</p>
                             <input id="btn_subscribe" type="button" class="button" value="Subscribe">
                         </form>
                     </div>
-                    <p>If you are those organizations in need of volunteers to post programs and search for their qualified volunteers. Please contact us at team@voluncation.com</p>
+                    <p>If you are those organizations in need of volunteers to post programs and search for their qualified volunteers. Please contact us at <a href="mailto:team@voluncation.com?subject=Post Program&body=Please provide program detail infomation or links of introduction">team@voluncation.com</a></p>
                 </div>
                 <!-- /.wrap -->
             </div>
@@ -108,12 +108,13 @@ Volunteer+Vacation,让身体和心灵同时在路上！</p>
     <footer>
         <div class="wrap">
             <p>&copy; 2014 <strong>旅心 Voluncation.com</strong>, All Rights Reserved</p>
+            <a href="{:U('Index/zh')}">中文版</a>
         </div>
         <!-- /.wrap -->
     </footer>
     <load href="__PUBLIC__/js/jquery.js" />
     <load href="__PUBLIC__/js/library.js" />
+    <load href="__PUBLIC__/js/bootstrap.js" />
     <load href="__PUBLIC__/js/script.js" />
-    <load href="__PUBLIC__/js/retina.js" />
 </body>
 </html>

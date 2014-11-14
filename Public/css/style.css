@@ -266,7 +266,7 @@ a {
     color: #10bbf1;
     cursor: pointer;
     background: transparent;
-    text-decoration: none;
+    text-decoration: none!important;
 }
 
 a:hover {
@@ -1094,4 +1094,17 @@ footer {
       -o-background-size: 200px 50px;
       background-size: 200px 50px;
   }
+}
+
+
+/*Overwrite bootstrap*/
+.popover-title {
+    text-align: center;
+}
+.popover-content {
+    text-align: center;
+    font-size: 13px;
+}
+.popover-content hr {
+    margin: 5px 0px 0px;
 }

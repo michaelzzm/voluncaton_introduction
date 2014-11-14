@@ -46,4 +46,39 @@ $(document).ready(function(){
     });
     //------------------------------------------------------------------------//
 
+    $('#wechatShare').popover({placement: 'bottom', html: true, content: '<img src="/getqrcode.jpg"><hr>或在微信中打开本网页分享给好友'}
+      );
+    
+    //WeChat
+    document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+        // 发送给好友
+        WeixinJSBridge.on('menu:share:appmessage', function (argv) {
+            WeixinJSBridge.invoke('sendAppMessage', {
+                "appid": "",
+                "img_url": "http://www.voluncation.com/logo-wechat.jpg",
+                "img_width": "128",
+                "img_height": "128",
+                "link": "http://www.voluncation.com/",
+                "desc":  "让你的身体和心灵都在路上!",
+                "title": "旅心Voluncation"
+            }, function (res) {
+                _report('send_msg', res.err_msg);
+            })
+        });
+
+        // 分享到朋友圈
+        WeixinJSBridge.on('menu:share:timeline', function (argv) {
+            WeixinJSBridge.invoke('shareTimeline', {
+                "img_url": "http://www.voluncation.com/logo-wechat.jpg",
+                "img_width": "128",
+                "img_height": "128",
+                "link": "http://www.voluncation.com/",
+                "desc":  "让你的身体和心灵都在路上!",
+                "title": "旅心Voluncation"
+            }, function (res) {
+                _report('timeline', res.err_msg);
+            });
+        });
+    }, false);
+    
 });//document ready
