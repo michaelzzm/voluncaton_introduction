@@ -8,6 +8,10 @@
     <title>旅心Voluncation - 让你的身体和心灵都在路上！</title>
     <meta name="description" content="公益旅行">
     <meta name="keywords" content="公益, 旅行">
+    <link rel="apple-touch-icon" href="touch/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="touch/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="touch/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="touch/apple-touch-icon-144x144.png">
     <meta name="format-detection" content="telephone=no">
     <meta name="format-detection" content="address=no">
     <load href="__PUBLIC__/css/bootstrap.min.css" />
